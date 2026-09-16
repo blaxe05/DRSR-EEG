@@ -1,0 +1,43 @@
+{
+  "design_version": "same-model-seed-validation",
+  "scientific_role": "locked same-model re-estimation on SEED and SEED-IV",
+  "configuration_source": "modal development-fold configuration",
+  "separate_parent_probability_used": false,
+  "target_labels_used_for_training_or_fixed_final_selection": false,
+  "datasets": {
+    "seed3": {
+      "label": "SEED",
+      "num_classes": 3,
+      "batch_size": 96,
+      "source_participants_per_fold": 14,
+      "target_participants_per_fold": 1,
+      "outer_protocol": "session-specific 15-fold participant-wise leave-one-out"
+    },
+    "seed4": {
+      "label": "SEED-IV",
+      "num_classes": 4,
+      "batch_size": 64,
+      "source_participants_per_fold": 14,
+      "target_participants_per_fold": 1,
+      "outer_protocol": "session-specific 15-fold participant-wise leave-one-out"
+    }
+  },
+  "frozen_configuration": {
+    "conditional_alignment_weight": 0.0,
+    "js_relevance_weight": 0.0,
+    "residual_coefficient": 0.25,
+    "routing_cardinality": 14,
+    "routing_temperature": 1.0,
+    "source_only_warmup_iterations": 0,
+    "training_iterations": 1000,
+    "checkpoint_iterations": [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000],
+    "optimizer_seed": 42,
+    "target_bank_history_retention": 0.1,
+    "source_bank_history_retention": 0.5,
+    "corrected_cluster_centres": true,
+    "structural_assignment": "two-hop nearest-cluster voting"
+  },
+  "fixed_final_checkpoint": 1000,
+  "target_assisted_rule": "earliest checkpoint with maximum held-out target accuracy after trajectory commit"
+}
+

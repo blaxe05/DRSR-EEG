@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software or its paper-facing results, please cite the accompanying article."
+title: "DRSR: Complementary source roles for cross-subject EEG emotion recognition"
+type: software
+authors:
+  - family-names: "Abd Latif"
+    given-names: "Muhamad Hafiz"
+    orcid: "https://orcid.org/0000-0002-9246-1028"
+  - family-names: "Roslan"
+    given-names: "Nur Syahirah"
+    orcid: "https://orcid.org/0000-0002-6371-1067"
+repository-code: "https://github.com/blaxe05/DRSR-EEG"
+date-released: 2026-09-16
+license: "LicenseRef-Proprietary"

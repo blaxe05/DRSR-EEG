@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+env/
+data/
+results/
+checkpoints/
+probabilities/
+*.pt
+*.pth
+*.npz
+*.log
+
+# The root design files are authoritative. This copied convenience directory
+# is excluded to avoid publishing the same contracts twice.
+configs/
+analysis/
+experiments/
+src/
+# Internal queue supervision and interrupted-run recovery are deliberately not
+# part of the public scientific interface. They contain machine-specific
+# process-state contracts rather than model or analysis logic.
+run_*_queue.py
+prepare_faced_route_cardinality_r3.py
+analyze_faced_route_cardinality_sensitivity_r3.py
+
+# These manuscript-build helpers depend on internal comparator runner modules.
+# Their reader-facing outputs are released under results/paper_generated/.
+prepare_final_manuscript_results.py
+profile_matched_model_resources.py

@@ -1,0 +1,27 @@
+{
+  "design_version": "faced-route-cardinality-sensitivity",
+  "scientific_role": "fixed-training-state external routing-cardinality sensitivity",
+  "parent_design": "faced_external_validation_design.json",
+  "parent_design_sha256": "40abd730a36952e07f1f64841dc837d7c569d6c3f994a31b17fa22cf25473ae0",
+  "smoke_subjects": [1, 2, 122, 123],
+  "production_subjects": "1..123",
+  "source_count": 122,
+  "original_route_cardinality": 14,
+  "sensitivity_route_cardinality": 122,
+  "residual_coefficient": 0.25,
+  "optimizer_seed": 42,
+  "training_iterations": 1000,
+  "adversarial_schedule_iterations": 1000,
+  "smoke_executed_iterations": 50,
+  "checkpoint_iterations": [
+    50, 100, 150, 200, 250, 300, 350, 400, 450, 500,
+    550, 600, 650, 700, 750, 800, 850, 900, 950, 1000
+  ],
+  "selection_rule": "descending final reliability with participant index as tie-break",
+  "all_source_rule": "normalize the same positive final reliability vector over all 122 sources",
+  "primary_endpoint": 1000,
+  "target_labels_used_for_training_or_policy_selection": false,
+  "probability_reconstruction_tolerance": 5e-7,
+  "metric_reconstruction_tolerance": 1e-10,
+  "interpretation": "fixed-model prediction sensitivity, not a retrained causal ablation"
+}
