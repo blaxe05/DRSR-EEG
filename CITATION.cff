@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or its paper-facing results, please cite the accompanying article."
-title: "DRSR: Complementary source roles for cross-subject EEG emotion recognition"
+title: "Dual-Role Source Routing for Cross-Subject EEG Emotion Recognition"
 type: software
 authors:
   - family-names: "Abd Latif"

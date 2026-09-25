@@ -1,6 +1,6 @@
 # DRSR for cross-subject EEG emotion recognition
 
-This repository contains the reproduction code for **Learning Complementary Source Roles for Cross-Subject EEG Emotion Recognition**. It provides the DRSR model architectures, dataset loaders, frozen experiment specifications, and experiment runners to reproduce the empirical results.
+This repository contains the reproduction code for **Dual-Role Source Routing for Cross-Subject EEG Emotion Recognition**. It provides the DRSR model architectures, dataset loaders, frozen experiment specifications, and experiment runners to reproduce the empirical results.
 
 ## What is included
 
